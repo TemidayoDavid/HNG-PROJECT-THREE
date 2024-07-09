@@ -16,21 +16,15 @@ import Pages from "./pages/Pages/pages";
 function App() {
   return (
     <div className="App">
+      
       <BrowserRouter>
+      <div className="app__order">
       <Header />
-      {/* <Title /> */}
-      {/* <Listing /> */}
+    
       <Pages />
-      {/* <Listing /> */}
       
-      {/* <Gridimage /> */}
-     
-      
-      {/* <Carousel /> */}
-      {/* <Checkout /> */}
-      {/* <Cart /> */}
-      {/* <Minicart /> */}
       <Footer />
+      </div>
       </BrowserRouter>
     </div>
   );

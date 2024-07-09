@@ -41,22 +41,22 @@ function Footer() {
                 <ul className={styles.foo__list}>
                     <Link to={"/"}>
                     <li className={styles.foo__item}>
-                        <a href="#">Home</a>
+                        Home
                     </li>
                     </Link>
                     <Link to={"#"}>
                     <li className={styles.foo__item}>
-                        <a href="#">About</a>
+                        About
                     </li>
                     </Link>
                      <Link to={"#"}>
                     <li className={styles.foo__item}>
-                        <a href="#">Blog</a>
+                        Blog
                     </li>
                     </Link>
                     <Link to={"#"}>
                     <li className={styles.foo__item}>
-                        <a href="#">Categories</a>
+                       Categories
                     </li>
                     </Link>
                 </ul>

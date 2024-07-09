@@ -28,12 +28,12 @@ function Header() {
               <ul className={styles.nav__list}>
                 <Link to={"/"}>
                   <li className={styles.nav__item}>
-                      <a href="#">Home</a>
+                      Home
                   </li>
                   </Link>
                   <Link to={"#"}>
                   <li className={styles.nav__item}>
-                      <a href="#">About</a>
+                      About
                   </li>
                   </Link>
                   

@@ -1,5 +1,7 @@
 .gridimage{
-
+    display: flex;
+    justify-content: center;
+    
 }
 
 .gridimage__card{
