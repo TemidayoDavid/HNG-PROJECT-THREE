@@ -9,14 +9,18 @@ import Carousel from "./components/Carousel/Carousel";
 
 import Category from "./components/Category/Category";
 import Gridimage from "./components/Gridimage/Gridimage";
+import {BrowserRouter} from "react-router-dom";
+import Pages from "./pages/Pages/pages";
 
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Header />
       {/* <Title /> */}
-      <Listing />
+      {/* <Listing /> */}
+      <Pages />
       {/* <Listing /> */}
       
       {/* <Gridimage /> */}
@@ -27,6 +31,7 @@ function App() {
       {/* <Cart /> */}
       {/* <Minicart /> */}
       <Footer />
+      </BrowserRouter>
     </div>
   );
 }

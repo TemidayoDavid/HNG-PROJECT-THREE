@@ -3,6 +3,11 @@
     padding-top: 40px;
 }
 
+.order__carousel{
+    display: flex;
+    justify-content: space-around
+}
+
 .carousel__card{
     width: 305px;
     height: 348px;

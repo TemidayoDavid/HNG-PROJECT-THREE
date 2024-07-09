@@ -2,6 +2,8 @@ import React from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; 
 import styles from "./header.module.css";
+import logo from "../../Assets/logo.png"
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -15,17 +17,25 @@ function Header() {
 
     return (
       <div className={styles.header}>
+        
           <div className={styles.logo}>
-              <i className={styles.logo__icon}>Logo</i>
+          <Link to={"/"}>
+            <img className={styles.logo__icon} src={logo} alt="Smooth Buy" />
+          </Link>
           </div>
+          
           <nav className={styles.nav}>
               <ul className={styles.nav__list}>
+                <Link to={"/"}>
                   <li className={styles.nav__item}>
                       <a href="#">Home</a>
                   </li>
-                  <li className={styles.av__item}>
+                  </Link>
+                  <Link to={"#"}>
+                  <li className={styles.nav__item}>
                       <a href="#">About</a>
                   </li>
+                  </Link>
                   
               </ul>
               
@@ -35,9 +45,11 @@ function Header() {
                   </button>
               
               <div className={styles.cart}>
+                <Link to={"/cart"}>
                 <button className={styles.cart__btn}>
                     <ShoppingCartIcon style={styleCart}/>
                 </button>
+                </Link>
               </div>
   
   

@@ -2,6 +2,11 @@
     margin: 20px 80px;
 }
 
+.order__carousel{
+    display: flex;
+    justify-content: space-between;
+}
+
 .carousel__card{
     width: 273px;
     height: 538px;

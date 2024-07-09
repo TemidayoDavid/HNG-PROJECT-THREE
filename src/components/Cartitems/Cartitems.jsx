@@ -58,7 +58,7 @@ function Cartitems() {
                 </div>
                 <div className={styles.cartitems__product__desc}>
                     <span className={styles.product__name}>Basmatic rice</span>
-                    <p className={styles.product__category}>Grains and Stable</p>
+                    <p className={styles.product__category}>Grains and Staple</p>
                     <p className={styles.product__weigh}>2 kg</p>
                 </div>
                 <section className={styles.buydesc}>

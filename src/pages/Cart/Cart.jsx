@@ -2,10 +2,25 @@ import React from 'react';
 import Cartitems from '../../components/Cartitems/Cartitems';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Title from '../../components/Title/Title';
+import cartimageone from "../../Assets/title-img.jpeg"
+import { useNavigate } from 'react-router-dom';
 
 import "./cart.scss";
 
 function Cart() {
+
+    const navigate = useNavigate();
+
+    function toCheckout(event){
+        event.preventDefault();
+        navigate("/checkout")
+    }
+
+    function toListing(event){
+        event.preventDefault();
+        navigate("/")
+    }
 
 
     const styleArrowleft ={
@@ -14,7 +29,11 @@ function Cart() {
 
 
   return (
+    <div className="order__cart">
+        <Title headingimg={cartimageone} />
+    
     <div className="product">
+        
         <div className="title">
             <p className="title__heading">Product</p>
             <p className="title__heading">Price</p>
@@ -71,10 +90,11 @@ function Cart() {
 
                 </div>
                 <div className="process__btns">
-                    <button className="process__continue">
+
+                    <button onClick={toListing} className="process__continue">
                         Continue Shopping
                     </button>
-                    <button className="process__checkout">
+                    <button onClick={toCheckout} className="process__checkout">
                     <span className='process__btnName'>Proceed To Checkout</span>
                     <ArrowForwardIcon style={styleArrowleft}/>
                     </button>
@@ -83,6 +103,7 @@ function Cart() {
         </div>
 
         
+    </div>
     </div>
   )
 }

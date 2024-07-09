@@ -1,13 +1,17 @@
 import React from 'react'
 import styles from "./checkout.module.css"
 //import Cartitems from '../../components/Cartitems/Cartitems'
+import checkoutimg from "../../Assets/checkouthead.jpeg"
 import Shipping from '../../components/Shipping/Shipping'
+import Title from '../../components/Title/Title';
 
 function Checkout() {
 
 
 
     return (
+        <div className={styles.order__checkout}>
+                 <Title headingimg={checkoutimg} />
         <div className={styles.checkout}>
             <div className={styles.card}>
                 <p className={styles.cardtype}>Card Type</p>
@@ -65,6 +69,7 @@ function Checkout() {
                 <Shipping />
             </div>
 
+        </div>
         </div>
     )
 }

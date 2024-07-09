@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import CopyrightRoundedIcon from '@mui/icons-material/CopyrightRounded';
 import styles from "./footer.module.css";
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -38,19 +39,26 @@ function Footer() {
 
             <nav className={styles.foo__top}>
                 <ul className={styles.foo__list}>
+                    <Link to={"/"}>
                     <li className={styles.foo__item}>
                         <a href="#">Home</a>
                     </li>
+                    </Link>
+                    <Link to={"#"}>
                     <li className={styles.foo__item}>
                         <a href="#">About</a>
                     </li>
+                    </Link>
+                     <Link to={"#"}>
                     <li className={styles.foo__item}>
                         <a href="#">Blog</a>
                     </li>
+                    </Link>
+                    <Link to={"#"}>
                     <li className={styles.foo__item}>
                         <a href="#">Categories</a>
                     </li>
-
+                    </Link>
                 </ul>
 
                 <div className={styles.foo__link}>
