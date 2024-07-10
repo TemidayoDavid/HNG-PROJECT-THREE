@@ -14,7 +14,7 @@ function Carousel() {
           </div>
 
           <div className={styles.product__title}>
-            <p className={styles.product__name}>Uncle Ben's</p>
+            <span className={styles.product__name}>Uncle Ben's</span>
             <div className={styles.product__container}>
               <span className={styles.product__desc}>Original Rice</span>
               <span className={styles.product__desc}>25 Kg</span>
@@ -28,7 +28,7 @@ function Carousel() {
           </div>
 
           <div className={styles.product__title}>
-            <p className={styles.product__name}>Uncle Ben's</p>
+            <span className={styles.product__name}>Uncle Ben's</span>
             <div className={styles.product__container}>
               <span className={styles.product__desc}>Original Rice</span>
               <span className={styles.product__desc}>25 Kg</span>
@@ -42,7 +42,7 @@ function Carousel() {
           </div>
 
           <div className={styles.product__title}>
-            <p className={styles.product__name}>Uncle Ben's</p>
+            <span className={styles.product__name}>Uncle Ben's</span>
             <div className={styles.product__container}>
               <span className={styles.product__desc}>Original Rice</span>
               <span className={styles.product__desc}>25 Kg</span>
@@ -56,7 +56,7 @@ function Carousel() {
           </div>
 
           <div className={styles.product__title}>
-            <p className={styles.product__name}>Uncle Ben's</p>
+            <span className={styles.product__name}>Uncle Ben's</span>
             <div className={styles.product__container}>
               <span className={styles.product__desc}>Original Rice</span>
               <span className={styles.product__desc}>25 Kg</span>

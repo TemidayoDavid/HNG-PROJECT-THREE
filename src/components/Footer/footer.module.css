@@ -132,3 +132,22 @@
 .foo__icons__list{
 
 }
+
+
+
+@media screen and (max-width: 1040px) {
+
+    .foo__top{
+        flex-direction: column;
+    }
+
+    .foo__list{
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+    }
+
+    .foo__link{
+        justify-content: space-evenly;
+    }
+
+}

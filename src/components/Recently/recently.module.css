@@ -7,7 +7,7 @@
 
 .order__recently{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .carousel__card{
@@ -138,3 +138,22 @@
 {}
 
 {}
+
+
+@media screen and (max-width: 1236px) {
+    .carousel__card:nth-of-type(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+
+    .order__recently{
+        justify-content: center;
+    }
+
+
+    .carousel__card:nth-of-type(3){
+        display: none;
+    }
+}

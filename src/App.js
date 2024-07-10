@@ -18,13 +18,13 @@ function App() {
     <div className="App">
       
       <BrowserRouter>
-      <div className="app__order">
+      
       <Header />
     
       <Pages />
       
       <Footer />
-      </div>
+      
       </BrowserRouter>
     </div>
   );

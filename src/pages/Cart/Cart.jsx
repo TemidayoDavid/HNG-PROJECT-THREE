@@ -5,7 +5,6 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Title from '../../components/Title/Title';
 import cartimageone from "../../Assets/title-img.jpeg"
 import { useNavigate } from 'react-router-dom';
-
 import "./cart.scss";
 
 function Cart() {

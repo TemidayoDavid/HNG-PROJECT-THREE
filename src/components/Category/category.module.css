@@ -5,7 +5,7 @@
 
 .category__container{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
 }
 
 .category__card{
@@ -30,4 +30,33 @@
     font-weight: 700;
     font-size: 16px;
     color: #FFF;
+}
+
+
+
+@media screen and (max-width: 1236px) {
+    .category__card:nth-of-type(7){
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1066px) {
+    .category__card:nth-of-type(6){
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1040px) {
+    .category__card:nth-of-type(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 783px) {
+    .category__card:nth-of-type(4){
+        display: none;
+    }
 }
